@@ -1,0 +1,15 @@
+h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#buttonContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.gameButtons{
+    margin-left: 2%;
+    margin-right: 2%
+}
