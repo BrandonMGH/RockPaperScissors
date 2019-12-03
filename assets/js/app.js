@@ -12,21 +12,25 @@ console.log(computerChoice)
 rockButton.onclick = function () {
     console.log(rockButton.value)
     humanChoice = rockButton.value
+    compareChoices()
 }
 
 paperButton.onclick = function () {
     console.log(paperButton.value)
-    humanChoice = rockButton.value
+    humanChoice = paperButton.value
+    compareChoices()
 }
 
 scissorsButton.onclick = function () {
     console.log(scissorsButton.value)
-    humanChoice = rockButton.value
+    humanChoice = scissorsButton.value
+    compareChoices()
 }
 
-
+let compareChoices = function () { 
 if(humanChoice === computerChoice){
     console.log("You win")
 }else {
     console.log("you lose")
+}
 }
