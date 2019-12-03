@@ -1,13 +1,26 @@
 
 const rockButton = document.getElementById("rockButton")
-// let paperButton = document.getElementById("paperButton")
-// let scissorsButton = document.getElementById("scissorsButton")
+const paperButton = document.getElementById("paperButton")
+const scissorsButton = document.getElementById("scissorsButton")
 const computerOptions = ["Rock", "Paper", "Scissors" ]
 
+
+let humanTally = 0; 
+let computerTally = 0; 
 let humanChoice = ""
 let computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
 
+document.getElementById("humanTally").innerHTML = humanTally
+document.getElementById("computerTally").innerHTML = computerTally
+
 console.log(computerChoice)
+
+test = document.getElementById("test")
+
+test.onclick = function (){
+    humanTally++;
+    console.log('test')
+}
 
 rockButton.onclick = function () {
     console.log(rockButton.value)
@@ -29,8 +42,12 @@ scissorsButton.onclick = function () {
 
 let compareChoices = function () { 
 if(humanChoice === computerChoice){
-    console.log("You win")
+    alert("You win")
+    humanTally +=1
+    // gameReset();
 }else {
-    console.log("you lose")
+    alert("you lose")
+    computerTally +=1
+    // gameReset();
 }
 }

@@ -4,12 +4,20 @@ h1 {
     justify-content: center;
 }
 
-#buttonContainer{
+#gameContainer{
   display: flex;
+  justify-content: space-evenly;
+}
+
+#buttonContainer{
+  display: grid;
   justify-content: center;
 }
 
-#gameButtons{
-    margin-left: 2%;
-    margin-right: 2%
+#scoreBox {
+  border: solid 2px black
+}
+
+.gameButtons{
+    margin-bottom: 10%;
 }
