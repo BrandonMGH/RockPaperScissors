@@ -13,14 +13,10 @@ let computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.le
 document.getElementById("humanTally").innerHTML = humanTally
 document.getElementById("computerTally").innerHTML = computerTally
 
+
 console.log(computerChoice)
 
-test = document.getElementById("test")
 
-test.onclick = function (){
-    humanTally++;
-    console.log('test')
-}
 
 rockButton.onclick = function () {
     console.log(rockButton.value)
@@ -43,11 +39,14 @@ scissorsButton.onclick = function () {
 let compareChoices = function () { 
 if(humanChoice === computerChoice){
     alert("You win")
-    humanTally +=1
+    humanTally++;
+    document.getElementById("humanTally").innerHTML = humanTally
     // gameReset();
 }else {
     alert("you lose")
-    computerTally +=1
+    computerTally++;
+    document.getElementById("computerTally").innerHTML = computerTally
     // gameReset();
 }
 }
+
