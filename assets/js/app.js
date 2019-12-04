@@ -41,7 +41,7 @@ if(humanChoice === "Rock"  && computerChoice === "Scissors" || humanChoice === "
     alert("You win")
     humanTally++;
     document.getElementById("humanTally").innerHTML = humanTally
-    document.getElementById("test").style.color = "blue";
+    document.getElementById("test").style.marginLeft = "60%";
     computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
     console.log(computerChoice)
 }else if (humanChoice === computerChoice){
