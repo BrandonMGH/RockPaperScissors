@@ -4,6 +4,7 @@ h1 {
     justify-content: center;
 }
 
+
 #gameContainer{
   display: flex;
   justify-content: space-evenly;
