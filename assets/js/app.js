@@ -37,16 +37,22 @@ scissorsButton.onclick = function () {
 }
 
 let compareChoices = function () { 
-if(humanChoice === computerChoice){
+if(humanChoice === "Rock"  && computerChoice === "Scissors" || humanChoice === "Paper" && computerChoice === "Rock" || humanChoice === "Scissors" && computerChoice === "Paper"){
     alert("You win")
     humanTally++;
     document.getElementById("humanTally").innerHTML = humanTally
-    // gameReset();
-}else {
+    computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
+    console.log(computerChoice)
+}else if (humanChoice === computerChoice){
+    alert("You both tied")
+    computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
+    console.log(computerChoice)
+} else {
     alert("you lose")
     computerTally++;
     document.getElementById("computerTally").innerHTML = computerTally
-    // gameReset();
+    computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
+    console.log(computerChoice)
 }
-}
+};
 

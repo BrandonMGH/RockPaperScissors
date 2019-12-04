@@ -12,10 +12,18 @@ h1 {
 #buttonContainer{
   display: grid;
   justify-content: center;
+  width: 33%; 
 }
 
-#scoreBox {
-  border: solid 2px black
+.scoreBox {
+border: solid black 2px;
+width: 33%;
+text-align: center; 
+}
+
+#humanTally, #computerTally {
+  position: relative; 
+  top: 25%; 
 }
 
 .gameButtons{
