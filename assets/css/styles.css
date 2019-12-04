@@ -3,6 +3,13 @@ h1 {
     justify-content: center;
 }
 
+#imageContainer {
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/AlienEncounterBackground.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
 
 #gameContainer{
   display: flex;

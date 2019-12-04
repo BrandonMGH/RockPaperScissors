@@ -66,28 +66,28 @@ if(humanChoice === "Rock"  && computerChoice === "Scissors" || humanChoice === "
 
 let iconMove = function (){
     if(tallyDifference === -5){
-        document.getElementById("test").style.marginRight = "75%";
+        document.getElementById("meteorImg").style.marginRight = "75%";
     }else if (tallyDifference === -4){
-        document.getElementById("test").style.marginRight = "60%";
+        document.getElementById("meteorImg").style.marginRight = "60%";
     }else if (tallyDifference === -3){
-        document.getElementById("test").style.marginRight = "45%";
+        document.getElementById("meteorImg").style.marginRight = "45%";
     }else if (tallyDifference === -2){
-        document.getElementById("test").style.marginRight = "30%";
+        document.getElementById("meteorImg").style.marginRight = "30%";
     }else if (tallyDifference === -1){
-        document.getElementById("test").style.marginRight = "15%";
+        document.getElementById("meteorImg").style.marginRight = "15%";
     }else if (tallyDifference === -0){
-        document.getElementById("test").style.marginRight = "0%";
-        document.getElementById("test").style.marginLeft = "0%";
+        document.getElementById("meteorImg").style.marginRight = "0%";
+        document.getElementById("meteorImg").style.marginLeft = "0%";
     }else if (tallyDifference === 1){
-        document.getElementById("test").style.marginLeft = "15%";
+        document.getElementById("meteorImg").style.marginLeft = "15%";
     }else if (tallyDifference === 2){
-        document.getElementById("test").style.marginLeft = "30%";
+        document.getElementById("meteorImg").style.marginLeft = "30%";
     }else if (tallyDifference === 3){
-        document.getElementById("test").style.marginLeft = "45%";
+        document.getElementById("meteorImg").style.marginLeft = "45%";
     }else if (tallyDifference === 4){
-        document.getElementById("test").style.marginLeft = "60%";
+        document.getElementById("meteorImg").style.marginLeft = "60%";
     }else if (tallyDifference === 5){
-        document.getElementById("test").style.marginRight = "75%";
+        document.getElementById("meteorImg").style.marginRight = "75%";
     }
 }
 console.log(tallyDifference)
