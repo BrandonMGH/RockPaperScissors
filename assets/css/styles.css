@@ -1,15 +1,19 @@
+
 h1 {
     display: flex;
     justify-content: center;
 }
 
+
 #imageContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   background-image: url("../images/AlienEncounterBackground.png");
   background-repeat: no-repeat;
   background-size: auto;
 }
+
+
 
 #gameContainer{
   display: flex;
@@ -19,7 +23,7 @@ h1 {
 #buttonContainer{
   display: grid;
   justify-content: center;
-  width: 33%; 
+  width: 30%; 
 }
 
 .scoreBox {

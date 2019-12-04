@@ -67,6 +67,7 @@ if(humanChoice === "Rock"  && computerChoice === "Scissors" || humanChoice === "
 let iconMove = function (){
     if(tallyDifference === -5){
         document.getElementById("meteorImg").style.marginLeft = "75%";
+        document.getElementById("statusText").innerHTML = "YOU LOSE"
     }else if (tallyDifference === -4){
         document.getElementById("meteorImg").style.marginLeft = "60%";
     }else if (tallyDifference === -3){
@@ -88,6 +89,7 @@ let iconMove = function (){
         document.getElementById("meteorImg").style.marginRight = "60%";
     }else if (tallyDifference === 5){
         document.getElementById("meteorImg").style.marginRight = "75%";
+        document.getElementById("statusText").innerHTML = "YOU WIN"
     }
 }
-console.log(tallyDifference)
+
