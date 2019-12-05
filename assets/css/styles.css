@@ -11,6 +11,7 @@ h1 {
   background-image: url("../images/AlienEncounterBackground.png");
   background-repeat: no-repeat;
   background-size: auto;
+  margin-bottom: 5%; 
 }
 
 #spaceMan {
@@ -20,12 +21,29 @@ h1 {
 
 #spaceShip {
   position: relative; 
-  right: 12%; 
+  right: 13%; 
 }
 
 #alien {
   position: relative;
-  left: 12%;
+  left: 13%;
+}
+
+@media only screen and (max-width: 900px) {
+  #spaceShip {
+    right: 5%; 
+  }
+  #alien {
+    left: 5%
+  }
+}
+@media only screen and (max-width: 600px) {
+  #spaceShip {
+    right: 2.5%; 
+  }
+  #alien {
+    left: 2.5%
+  }
 }
 
 #gameContainer{
