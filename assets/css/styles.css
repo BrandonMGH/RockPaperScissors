@@ -104,7 +104,7 @@ body{
 #buttonContainer{
   display: grid;
   justify-content: center;
-  width: 34%; 
+  width: 100%;  
 }
 
 #humanScoreBox {
@@ -131,5 +131,11 @@ padding: 5% 5%
 }
 
 .gameButtons{
-    margin-bottom: 10%;
+    text-align: center; 
+    padding-left: 25%;
+    padding-right: 25%;
+    margin: 10%; 
+    border-radius: 25px;
+    border: red 2px solid;
+    background-color: white; 
 }
