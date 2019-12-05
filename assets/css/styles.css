@@ -61,6 +61,7 @@ body{
   background-size: auto;
   margin: 5%; 
   border-radius: 25px;
+  border: solid white 5px; 
 }
 
 #spaceMan {
