@@ -66,30 +66,30 @@ if(humanChoice === "Rock"  && computerChoice === "Scissors" || humanChoice === "
 
 let iconMove = function (){
     if(tallyDifference === -5){
-        document.getElementById("meteorImg").style.marginLeft = "75%";
-        document.getElementById("statusText").innerHTML = "YOU LOSE"
+        document.getElementById("spaceMan").style.left = "25%";
+        // document.getElementById("statusText").innerHTML = "YOU LOSE"
     }else if (tallyDifference === -4){
-        document.getElementById("meteorImg").style.marginLeft = "60%";
+        document.getElementById("spaceMan").style.left = "20%";
     }else if (tallyDifference === -3){
-        document.getElementById("meteorImg").style.marginLeft = "45%";
+        document.getElementById("spaceMan").style.left = "15%";
     }else if (tallyDifference === -2){
-        document.getElementById("meteorImg").style.marginLeft = "30%";
+        document.getElementById("spaceMan").style.left = "10%";
     }else if (tallyDifference === -1){
-        document.getElementById("meteorImg").style.marginLeft = "15%";
+        document.getElementById("spaceMan").style.left = "5%";
     }else if (tallyDifference === -0){
-        document.getElementById("meteorImg").style.marginLeft = "0%";
-        document.getElementById("meteorImg").style.marginRight = "0%";
+        document.getElementById("spaceMan").style.left = "0%";
+        document.getElementById("spaceMan").style.right = "0%";
     }else if (tallyDifference === 1){
-        document.getElementById("meteorImg").style.marginRight = "15%";
+        document.getElementById("spaceMan").style.right = "5%";
     }else if (tallyDifference === 2){
-        document.getElementById("meteorImg").style.marginRight = "30%";
+        document.getElementById("spaceMan").style.right = "10%";
     }else if (tallyDifference === 3){
-        document.getElementById("meteorImg").style.marginRight = "45%";
+        document.getElementById("spaceMan").style.right = "15%";
     }else if (tallyDifference === 4){
-        document.getElementById("meteorImg").style.marginRight = "60%";
+        document.getElementById("spaceMan").style.right = "20%";
     }else if (tallyDifference === 5){
-        document.getElementById("meteorImg").style.marginRight = "75%";
-        document.getElementById("statusText").innerHTML = "YOU WIN"
+        document.getElementById("spaceMan").style.right = "25%";
+        // document.getElementById("statusText").innerHTML = "YOU WIN"
     }
 }
 

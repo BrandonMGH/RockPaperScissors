@@ -13,6 +13,10 @@ h1 {
   background-size: auto;
 }
 
+#spaceMan {
+  position: relative; 
+
+}
 
 
 #gameContainer{
@@ -23,7 +27,7 @@ h1 {
 #buttonContainer{
   display: grid;
   justify-content: center;
-  width: 30%; 
+  width: 25%; 
 }
 
 .scoreBox {
