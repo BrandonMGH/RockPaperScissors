@@ -12,6 +12,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: auto;
   margin-bottom: 5%; 
+  border-radius: 10%;
 }
 
 #spaceMan {
