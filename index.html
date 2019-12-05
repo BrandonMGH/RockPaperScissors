@@ -4,36 +4,49 @@
 <head>
     <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow:400,800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div>
         <div id="textContainer">
-            <h1 id="textHeading">ASTEROIDS, COMETS, STARS </h1>
+            <div id="headingBox">
+                <h1 id="textHeading">ASTEROIDS, COMETS AND STARS </h1>
+            </div>
             <div id="textBox">
-                <p> A variation of the game Rock, Paper,Scissors, Asteroids, Comets and Stars requires you to best the
-                    alien in series of games where you are required to choose one of three options in order to save the
-                    space walker from being captured and devoured by the alien. </p>
+                <div id="gameSummary">
+                    <h3>Game Summary</h3>
+                    <p> A variation of the game Rock, Paper,Scissors, Asteroids, Comets and Stars requires the player to
+                        assist the space walker in his attempt to escape the ravenous hunger of the alien chasing him.
+                        To do
+                        this, you must best the alien in a series of games of Asteroids, Coments and Stars. . </p>
+                </div>
+                <div id="gameInstructions">
+                        <h3>Game Instructions</h3>
+                        <p>PlaceHolder text</p>
+                    </div>
             </div>
+            
         </div>
-        <div id="imageContainer">
-            <img id="spaceShip" src="assets/images/Spaceship.png">
-            <img id="spaceMan" src="assets/images/FleeingSpaceMan.png">
-            <img id="alien" src="assets/images/AlienImg.png">
+    </div>
+    <div id="imageContainer">
+        <img id="spaceShip" src="assets/images/Spaceship.png">
+        <img id="spaceMan" src="assets/images/FleeingSpaceMan.png">
+        <img id="alien" src="assets/images/AlienImg.png">
+    </div>
+    <div id="gameContainer">
+        <div id="humanScoreBox">
+            <p id="humanTally"></p>
         </div>
-        <div id="gameContainer">
-            <div class="scoreBox">
-                <p id="humanTally"></p>
-            </div>
-            <div id="buttonContainer">
-                <button class="gameButtons" id="rockButton" value="Rock">Rock</button>
-                <button class="gameButtons" id="paperButton" value="Paper">Paper</button>
-                <button class="gameButtons" id="scissorsButton" value="Scissors">Scissors</button>
-            </div>
-            <div class="scoreBox">
-                <p id="computerTally">test</p>
-            </div>
+        <div id="buttonContainer">
+            <button class="gameButtons" id="rockButton" value="Rock">Rock</button>
+            <button class="gameButtons" id="paperButton" value="Paper">Paper</button>
+            <button class="gameButtons" id="scissorsButton" value="Scissors">Scissors</button>
         </div>
+        <div id="computerScoreBox">
+            <p id="computerTally">test</p>
+        </div>
+    </div>
     </div>
     <script src="assets/js/app.js"></script>
 </body>

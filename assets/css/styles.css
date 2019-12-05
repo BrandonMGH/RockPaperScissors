@@ -2,7 +2,8 @@
 body{
   background-image: url("../images/SPACE-BODY-BG.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  font-family: 'Tomorrow', sans-serif;
 }
 
 #textContainer {
@@ -10,21 +11,44 @@ body{
   justify-items: center;
 }
 
+#headingBox{
+  background-color: #18f52b;
+  text-align: center; 
+  border-radius: 25px; 
+  
+}
+
 #textHeading {
-  width:50%;
-  background-color: #fa9d96;
+  background-color: black;
+  color: #18f52b;
   border-radius: 25px;
   text-align: center; 
-  padding: 2%; 
+  padding: 5%; 
+  margin: 5%; 
 
 }
 
 #textBox {
   width: 50%;
-  background-color: darkblue; 
+  background-color: #18f52b; 
   text-align: center; 
-  padding: 5%;
+  padding: 2%;
   margin: 2%; 
+  border-radius: 25px; 
+}
+
+#gameSummary{
+  background-color: black; 
+  color: #18f52b; 
+  padding: 5%;
+  margin: 2%;
+  border-radius: 25px; 
+}
+
+#gameInstructions{
+  background-color: black; 
+  color: #18f52b; 
+  padding: 5%;
   border-radius: 25px; 
 }
 
@@ -82,10 +106,22 @@ body{
   width: 34%; 
 }
 
-.scoreBox {
-border: solid black 2px;
-width: 32%;
+#humanScoreBox {
+background-color: #8600bf;
+border-radius: 25px; 
 text-align: center; 
+width: 33%;
+margin: 5% 5%;
+height: 100%; 
+}
+
+#computerScoreBox {
+  background-color: #18f52b;
+  border-radius: 25px; 
+  text-align: center; 
+  width: 33%;
+  margin: 5% 5%;
+  height: 100%;
 }
 
 #humanTally, #computerTally {

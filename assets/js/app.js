@@ -76,7 +76,7 @@ let iconMove = function (){
         document.getElementById("spaceMan").style.left = "10%";
     }else if (tallyDifference === -1){
         document.getElementById("spaceMan").style.left = "5%";
-    }else if (tallyDifference === -0){
+    }else if (tallyDifference === 0){
         document.getElementById("spaceMan").style.left = "0%";
         document.getElementById("spaceMan").style.right = "0%";
     }else if (tallyDifference === 1){
