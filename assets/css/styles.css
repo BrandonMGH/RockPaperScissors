@@ -1,6 +1,6 @@
 
 body{
-  background-image: url("../images/SPACE-BODY-BG.jpg");
+  background-image: url("../images/SPACE-BODY-BG-DARK.png");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Tomorrow', sans-serif;
@@ -30,7 +30,7 @@ body{
 
 #textBox {
   width: 50%;
-  background-color: #18f52b; 
+  background-color: #8600bf; 
   text-align: center; 
   padding: 2%;
   margin: 2%; 
@@ -39,7 +39,7 @@ body{
 
 #gameSummary{
   background-color: black; 
-  color: #18f52b; 
+  color: #8600bf; 
   padding: 5%;
   margin: 2%;
   border-radius: 25px; 
@@ -47,7 +47,7 @@ body{
 
 #gameInstructions{
   background-color: black; 
-  color: #18f52b; 
+  color: #8600bf; 
   padding: 5%;
   border-radius: 25px; 
 }
