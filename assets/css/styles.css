@@ -18,21 +18,30 @@ h1 {
 
 }
 
+#spaceShip {
+  position: relative; 
+  right: 12%; 
+}
+
+#alien {
+  position: relative;
+  left: 12%;
+}
 
 #gameContainer{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 #buttonContainer{
   display: grid;
   justify-content: center;
-  width: 25%; 
+  width: 34%; 
 }
 
 .scoreBox {
 border: solid black 2px;
-width: 33%;
+width: 32%;
 text-align: center; 
 }
 
