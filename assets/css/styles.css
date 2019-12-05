@@ -1,7 +1,31 @@
 
-h1 {
-    display: flex;
-    justify-content: center;
+body{
+  background-image: url("../images/SPACE-BODY-BG.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#textContainer {
+  display: grid;
+  justify-items: center;
+}
+
+#textHeading {
+  width:50%;
+  background-color: #fa9d96;
+  border-radius: 25px;
+  text-align: center; 
+  padding: 2%; 
+
+}
+
+#textBox {
+  width: 50%;
+  background-color: darkblue; 
+  text-align: center; 
+  padding: 5%;
+  margin: 2%; 
+  border-radius: 25px; 
 }
 
 
@@ -11,8 +35,8 @@ h1 {
   background-image: url("../images/AlienEncounterBackground.png");
   background-repeat: no-repeat;
   background-size: auto;
-  margin-bottom: 5%; 
-  border-radius: 10%;
+  margin: 5%; 
+  border-radius: 25px;
 }
 
 #spaceMan {
