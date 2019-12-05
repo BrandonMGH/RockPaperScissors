@@ -4,15 +4,16 @@ const paperButton = document.getElementById("paperButton")
 const scissorsButton = document.getElementById("scissorsButton")
 const computerOptions = ["Rock", "Paper", "Scissors" ]
 
-
+let humanSessionScore = 0
+let computerSessionScore = 0
 let humanTally = 0; 
 let computerTally = 0; 
 let tallyDifference = 0
 let humanChoice = ""
 let computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
 
-document.getElementById("humanTally").innerHTML = humanTally
-document.getElementById("computerTally").innerHTML = computerTally
+document.getElementById("humanSessionScore").innerHTML = humanSessionScore
+document.getElementById("computerSessionScore").innerHTML = computerSessionScore
 
 
 console.log(computerChoice)
@@ -42,7 +43,6 @@ if(humanChoice === "Rock"  && computerChoice === "Scissors" || humanChoice === "
     alert("You win")
     humanTally++;
     tallyDifference ++; 
-    document.getElementById("humanTally").innerHTML = humanTally
     computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
     console.log(computerChoice)
     console.log(tallyDifference)
@@ -56,7 +56,6 @@ if(humanChoice === "Rock"  && computerChoice === "Scissors" || humanChoice === "
     alert("you lose")
     computerTally++;
     tallyDifference--;
-    document.getElementById("computerTally").innerHTML = computerTally
     computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
     console.log(computerChoice)
     console.log(tallyDifference)
@@ -67,7 +66,8 @@ if(humanChoice === "Rock"  && computerChoice === "Scissors" || humanChoice === "
 let iconMove = function (){
     if(tallyDifference === -5){
         document.getElementById("spaceMan").style.left = "25%";
-        // document.getElementById("statusText").innerHTML = "YOU LOSE"
+        computerSessionScore++; 
+        document.getElementById("computerSessionScore").innerHTML = computerSessionScore
     }else if (tallyDifference === -4){
         document.getElementById("spaceMan").style.left = "20%";
     }else if (tallyDifference === -3){
@@ -89,7 +89,8 @@ let iconMove = function (){
         document.getElementById("spaceMan").style.right = "20%";
     }else if (tallyDifference === 5){
         document.getElementById("spaceMan").style.right = "25%";
-        // document.getElementById("statusText").innerHTML = "YOU WIN"
+        humanSessionScore++; 
+        document.getElementById("humanSessionScore").innerHTML = humanSessionScore
     }
 }
 

@@ -113,7 +113,7 @@ border-radius: 25px;
 text-align: center; 
 width: 33%;
 margin: 5% 5%;
-height: 100%; 
+padding: 5% 5%
 }
 
 #computerScoreBox {
@@ -122,10 +122,10 @@ height: 100%;
   text-align: center; 
   width: 33%;
   margin: 5% 5%;
-  height: 100%;
+  padding: 5% 5%
 }
 
-#humanTally, #computerTally {
+#humanSessionScore, #computerSessionScore {
   position: relative; 
   top: 25%; 
 }
