@@ -69,30 +69,30 @@ if(humanChoice === "Asteroid"  && computerChoice === "Star" || humanChoice === "
 
 let iconMove = function (){
     if(tallyDifference === -5){
-        document.getElementById("spaceMan").style.left = "25%";
+        document.getElementById("spaceMan").style.left = "50%";
         computerSessionScore++; 
         document.getElementById("computerSessionScore").innerHTML = computerSessionScore
     }else if (tallyDifference === -4){
-        document.getElementById("spaceMan").style.left = "20%";
+        document.getElementById("spaceMan").style.left = "40%";
     }else if (tallyDifference === -3){
-        document.getElementById("spaceMan").style.left = "15%";
+        document.getElementById("spaceMan").style.left = "30%";
     }else if (tallyDifference === -2){
-        document.getElementById("spaceMan").style.left = "10%";
+        document.getElementById("spaceMan").style.left = "20%";
     }else if (tallyDifference === -1){
-        document.getElementById("spaceMan").style.left = "5%";
+        document.getElementById("spaceMan").style.left = "10%";
     }else if (tallyDifference === 0){
         document.getElementById("spaceMan").style.left = "0%";
         document.getElementById("spaceMan").style.right = "0%";
     }else if (tallyDifference === 1){
-        document.getElementById("spaceMan").style.right = "5%";
-    }else if (tallyDifference === 2){
         document.getElementById("spaceMan").style.right = "10%";
-    }else if (tallyDifference === 3){
-        document.getElementById("spaceMan").style.right = "15%";
-    }else if (tallyDifference === 4){
+    }else if (tallyDifference === 2){
         document.getElementById("spaceMan").style.right = "20%";
+    }else if (tallyDifference === 3){
+        document.getElementById("spaceMan").style.right = "30%";
+    }else if (tallyDifference === 4){
+        document.getElementById("spaceMan").style.right = "40%";
     }else if (tallyDifference === 5){
-        document.getElementById("spaceMan").style.right = "25%";
+        document.getElementById("spaceMan").style.right = "50%";
         humanSessionScore++; 
         document.getElementById("humanSessionScore").innerHTML = humanSessionScore
     }
