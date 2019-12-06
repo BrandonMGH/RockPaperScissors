@@ -51,7 +51,7 @@ if(humanChoice === "Asteroid"  && computerChoice === "Star" || humanChoice === "
     console.log(tallyDifference)
     iconMove(); 
 }else if (humanChoice === computerChoice){
-    document.getElementById("winnerLoserText").innerHTML = "Match is a tie"
+    document.getElementById("winnerLoserText").innerHTML = "Match is a Tie"
     computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
     console.log(computerChoice)
     console.log(tallyDifference)

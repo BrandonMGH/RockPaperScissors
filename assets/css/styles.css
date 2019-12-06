@@ -110,7 +110,7 @@ body{
 }
 
 #winnerLoserText{
-  border: solid 2px black;
+  border: solid 2px #18f52b;
   padding: 5%;
   color: #18f52b;
   background-color: #8600bf; 
@@ -173,4 +173,3 @@ padding: 5% 5%
   position: relative; 
   top: 25%; 
 }
-
