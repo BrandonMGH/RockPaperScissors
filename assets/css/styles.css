@@ -101,10 +101,33 @@ body{
   justify-content: center;
 }
 
+
 #buttonContainer{
   display: grid;
   justify-content: center;
-  width: 100%;  
+  width: 100%; 
+  text-align: center;  
+}
+
+#winnerLoserText{
+  border: solid 2px black;
+  padding: 5%;
+  color: #18f52b;
+  background-color: #8600bf; 
+}
+
+
+.gameButtons{
+  text-align: center; 
+  margin: 10%; 
+  border-radius: 25px;
+  border: white 2px solid;
+  background-color: black; 
+}
+
+.gameButtons:hover {
+background-color: white; 
+border: black 2px solid; 
 }
 
 #humanScoreBox {
@@ -151,15 +174,3 @@ padding: 5% 5%
   top: 25%; 
 }
 
-.gameButtons{
-    text-align: center; 
-    margin: 10%; 
-    border-radius: 25px;
-    border: white 2px solid;
-    background-color: black; 
-}
-
-.gameButtons:hover {
-  background-color: white; 
-  border: black 2px solid; 
-}

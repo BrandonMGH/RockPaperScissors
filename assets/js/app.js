@@ -42,24 +42,24 @@ starButton.onclick = function () {
 
 let compareChoices = function () { 
 if(humanChoice === "Asteroid"  && computerChoice === "Star" || humanChoice === "Comet" && computerChoice === "Asteroid" || humanChoice === "Star" && computerChoice === "Comet"){
-    alert("You win")
     humanTally++;
     tallyDifference ++; 
     document.getElementById("humanMatchScore").innerHTML = humanTally
+    document.getElementById("winnerLoserText").innerHTML = "Player Wins Match"
     computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
     console.log(computerChoice)
     console.log(tallyDifference)
     iconMove(); 
 }else if (humanChoice === computerChoice){
-    alert("You both tied")
+    document.getElementById("winnerLoserText").innerHTML = "Match is a tie"
     computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
     console.log(computerChoice)
     console.log(tallyDifference)
 } else {
-    alert("you lose")
     computerTally++;
     tallyDifference--;
     document.getElementById("computerMatchScore").innerHTML = computerTally
+    document.getElementById("winnerLoserText").innerHTML = "Computer Wins Match"
     computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
     console.log(computerChoice)
     console.log(tallyDifference)
