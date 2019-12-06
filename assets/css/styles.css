@@ -132,10 +132,8 @@ padding: 5% 5%
 
 .gameButtons{
     text-align: center; 
-    padding-left: 25%;
-    padding-right: 25%;
     margin: 10%; 
     border-radius: 25px;
-    border: red 2px solid;
-    background-image: url("../images/Asteroid.png");
+    border: white 2px solid;
+    background-color: black; 
 }
