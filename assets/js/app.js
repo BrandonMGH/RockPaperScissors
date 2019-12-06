@@ -59,7 +59,7 @@ if(humanChoice === "Asteroid"  && computerChoice === "Star" || humanChoice === "
     alert("you lose")
     computerTally++;
     tallyDifference--;
-    document.getElementById("computerMatchScore").innerHTML = humanTally
+    document.getElementById("computerMatchScore").innerHTML = computerTally
     computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
     console.log(computerChoice)
     console.log(tallyDifference)

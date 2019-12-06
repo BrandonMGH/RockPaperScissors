@@ -107,7 +107,6 @@ body{
   width: 100%;  
 }
 
-
 #humanScoreBox {
 background-color: #8600bf;
 border-radius: 25px; 
@@ -134,7 +133,7 @@ padding: 5% 5%
   padding: 5%; 
   display: grid;
   align-items: center;
-
+  
 }
 #computerScoreBoxInnerBorder{
   background-color: black;
@@ -144,6 +143,7 @@ padding: 5% 5%
   padding: 5%;
   display: grid;
   align-items: center;
+ 
 }
 
 #humanSessionScore, #computerSessionScore {
