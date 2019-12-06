@@ -125,6 +125,22 @@ padding: 5% 5%
   padding: 5% 5%
 }
 
+#humanScoreBoxInnerBorder{
+  background-color: black;
+  color: #8600bf;
+  height: 100%; 
+  padding: 2%;
+  border-radius: 25px; 
+}
+
+#computerScoreBoxInnerBorder{
+  background-color: black;
+  color: #18f52b;
+  height: 100%; 
+  padding: 2%;
+  border-radius: 25px; 
+}
+
 #humanSessionScore, #computerSessionScore {
   position: relative; 
   top: 25%; 
@@ -136,4 +152,9 @@ padding: 5% 5%
     border-radius: 25px;
     border: white 2px solid;
     background-color: black; 
+}
+
+.gameButtons:hover {
+  background-color: white; 
+  border: black 2px solid; 
 }

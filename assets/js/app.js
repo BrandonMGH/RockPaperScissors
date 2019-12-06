@@ -12,7 +12,7 @@ let tallyDifference = 0
 let humanChoice = ""
 let computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
 
-document.getElementById("humanSessionScore").innerHTML = humanSessionScore
+document.getElementById("humanSessionScore").innerHTML = humanSessionScore 
 document.getElementById("computerSessionScore").innerHTML = computerSessionScore
 
 
