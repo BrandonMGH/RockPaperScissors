@@ -14,6 +14,8 @@ let computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.le
 
 document.getElementById("humanSessionScore").innerHTML = humanSessionScore 
 document.getElementById("computerSessionScore").innerHTML = computerSessionScore
+document.getElementById("humanMatchScore").innerHTML = humanTally
+document.getElementById("computerMatchScore").innerHTML = computerTally
 
 
 console.log(computerChoice)
@@ -43,6 +45,7 @@ if(humanChoice === "Asteroid"  && computerChoice === "Star" || humanChoice === "
     alert("You win")
     humanTally++;
     tallyDifference ++; 
+    document.getElementById("humanMatchScore").innerHTML = humanTally
     computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
     console.log(computerChoice)
     console.log(tallyDifference)
@@ -56,6 +59,7 @@ if(humanChoice === "Asteroid"  && computerChoice === "Star" || humanChoice === "
     alert("you lose")
     computerTally++;
     tallyDifference--;
+    document.getElementById("computerMatchScore").innerHTML = humanTally
     computerChoice = computerOptions[Math.floor(Math.random()*computerOptions.length)];
     console.log(computerChoice)
     console.log(tallyDifference)
