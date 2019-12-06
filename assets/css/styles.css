@@ -139,6 +139,18 @@ padding: 5% 5%
   height: 100%; 
   padding: 2%;
   border-radius: 25px;
+  display: grid;
+  align-items: center; 
+}
+
+#humanScoreBoxInnerBorder{
+  background-color: black;
+  color: #8600bf;;
+  height: 100%; 
+  padding: 2%;
+  border-radius: 25px;
+  display: grid;
+  align-items: center;
 }
 
 #humanSessionScore, #computerSessionScore {
