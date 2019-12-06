@@ -1,8 +1,8 @@
 
-const rockButton = document.getElementById("rockButton")
-const paperButton = document.getElementById("paperButton")
-const scissorsButton = document.getElementById("scissorsButton")
-const computerOptions = ["Rock", "Paper", "Scissors" ]
+const asteroidButton = document.getElementById("asteroidButton")
+const cometButton = document.getElementById("cometButton")
+const starButton = document.getElementById("starButton")
+const computerOptions = ["Asteroid", "Comet", "Star" ]
 
 let humanSessionScore = 0
 let computerSessionScore = 0
@@ -20,26 +20,26 @@ console.log(computerChoice)
 
 
 
-rockButton.onclick = function () {
-    console.log(rockButton.value)
-    humanChoice = rockButton.value
+asteroidButton.onclick = function () {
+    console.log(asteroidButton.value)
+    humanChoice = asteroidButton.value
     compareChoices()
 }
 
-paperButton.onclick = function () {
-    console.log(paperButton.value)
-    humanChoice = paperButton.value
+cometButton.onclick = function () {
+    console.log(cometButton.value)
+    humanChoice = cometButton.value
     compareChoices()
 }
 
-scissorsButton.onclick = function () {
-    console.log(scissorsButton.value)
-    humanChoice = scissorsButton.value
+starButton.onclick = function () {
+    console.log(starButton.value)
+    humanChoice = starButton.value
     compareChoices()
 }
 
 let compareChoices = function () { 
-if(humanChoice === "Rock"  && computerChoice === "Scissors" || humanChoice === "Paper" && computerChoice === "Rock" || humanChoice === "Scissors" && computerChoice === "Paper"){
+if(humanChoice === "Asteroid"  && computerChoice === "Star" || humanChoice === "Comet" && computerChoice === "Asteroid" || humanChoice === "Star" && computerChoice === "Comet"){
     alert("You win")
     humanTally++;
     tallyDifference ++; 
