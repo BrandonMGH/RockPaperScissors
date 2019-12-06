@@ -89,10 +89,10 @@ body{
 }
 @media only screen and (max-width: 600px) {
   #spaceShip {
-    right: 2.5%; 
+    right: 0%; 
   }
   #alien {
-    left: 2.5%
+    left: 0%
   }
 }
 
@@ -137,5 +137,5 @@ padding: 5% 5%
     margin: 10%; 
     border-radius: 25px;
     border: red 2px solid;
-    background-color: white; 
+    background-image: url("../images/Asteroid.png");
 }
