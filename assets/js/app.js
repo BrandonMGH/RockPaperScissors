@@ -69,32 +69,42 @@ if(humanChoice === "Asteroid"  && computerChoice === "Star" || humanChoice === "
 
 let iconMove = function (){
     if(tallyDifference === -5){
-        document.getElementById("spaceMan").style.left = "50%";
-        computerSessionScore++; 
-        document.getElementById("computerSessionScore").innerHTML = computerSessionScore
-    }else if (tallyDifference === -4){
         document.getElementById("spaceMan").style.left = "40%";
+        computerSessionScore++; 
+        humanTally = 0
+        computerTally = 0
+        tallyDifference = 0 
+        document.getElementById("computerSessionScore").innerHTML = computerSessionScore
+        document.getElementById("computerMatchScore").innerHTML = computerTally
+        document.getElementById("winnerLoserText").innerHTML = "You have been devoured by the Alien"
+    }else if (tallyDifference === -4){
+        document.getElementById("spaceMan").style.left = "32%";
     }else if (tallyDifference === -3){
-        document.getElementById("spaceMan").style.left = "30%";
+        document.getElementById("spaceMan").style.left = "24%";
     }else if (tallyDifference === -2){
-        document.getElementById("spaceMan").style.left = "20%";
+        document.getElementById("spaceMan").style.left = "16%";
     }else if (tallyDifference === -1){
-        document.getElementById("spaceMan").style.left = "10%";
+        document.getElementById("spaceMan").style.left = "8%";
     }else if (tallyDifference === 0){
         document.getElementById("spaceMan").style.left = "0%";
         document.getElementById("spaceMan").style.right = "0%";
     }else if (tallyDifference === 1){
-        document.getElementById("spaceMan").style.right = "10%";
+        document.getElementById("spaceMan").style.right = "8%";
     }else if (tallyDifference === 2){
-        document.getElementById("spaceMan").style.right = "20%";
+        document.getElementById("spaceMan").style.right = "16%";
     }else if (tallyDifference === 3){
-        document.getElementById("spaceMan").style.right = "30%";
+        document.getElementById("spaceMan").style.right = "24%";
     }else if (tallyDifference === 4){
-        document.getElementById("spaceMan").style.right = "40%";
+        document.getElementById("spaceMan").style.right = "32%";
     }else if (tallyDifference === 5){
-        document.getElementById("spaceMan").style.right = "50%";
+        document.getElementById("spaceMan").style.right = "40%";
         humanSessionScore++; 
+        humanTally = 0
+        computerTally = 0
+        tallyDifference = 0 
         document.getElementById("humanSessionScore").innerHTML = humanSessionScore
+        document.getElementById("humanMatchScore").innerHTML = humanTally
+        document.getElementById("winnerLoserText").innerHTML = "You have saved the Space Walker!"
     }
 }
 
