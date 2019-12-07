@@ -77,8 +77,6 @@ let iconMove = function () {
         document.getElementById("computerSessionScore").innerHTML = computerSessionScore
         document.getElementById("computerMatchScore").innerHTML = computerTally
         document.getElementById("winnerLoserText").innerHTML = "You have been devoured by the Alien"
-        document.getElementById("spaceMan").style.left = "0%";
-        document.getElementById("spaceMan").style.right = "0%";
         setTimeout(() => {
             spaceWalkerReset();
         }, 3000);
@@ -117,7 +115,7 @@ let iconMove = function () {
 }
 
 let spaceWalkerReset = function () {
-    document.getElementById("computerSessionScore").innerHTML = "--"
+    document.getElementById("winnerLoserText").innerHTML = "--"
     document.getElementById("spaceMan").style.left = "0%";
     document.getElementById("spaceMan").style.right = "0%";
 }
