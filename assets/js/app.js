@@ -71,11 +71,8 @@ let iconMove = function () {
     if (tallyDifference === -5) {
         document.getElementById("spaceMan").style.left = "40%";
         computerSessionScore++;
-        humanTally = 0
-        computerTally = 0
         tallyDifference = 0
         document.getElementById("computerSessionScore").innerHTML = computerSessionScore
-        document.getElementById("computerMatchScore").innerHTML = computerTally
         document.getElementById("winnerLoserText").innerHTML = "You have been devoured by the Alien"
         setTimeout(() => {
             spaceWalkerReset();
@@ -102,11 +99,8 @@ let iconMove = function () {
     } else if (tallyDifference === 5) {
         document.getElementById("spaceMan").style.right = "40%";
         humanSessionScore++;
-        humanTally = 0
-        computerTally = 0
         tallyDifference = 0
         document.getElementById("humanSessionScore").innerHTML = humanSessionScore
-        document.getElementById("humanMatchScore").innerHTML = humanTally
         document.getElementById("winnerLoserText").innerHTML = "You have saved the Space Walker!"
         setTimeout(() => {
             spaceWalkerReset();
@@ -115,7 +109,10 @@ let iconMove = function () {
 }
 
 let spaceWalkerReset = function () {
-    document.getElementById("winnerLoserText").innerHTML = "--"
+    humanTally = 0
+    computerTally = 0   
+    document.getElementById("humanMatchScore").innerHTML = humanTally
+    document.getElementById("computerMatchScore").innerHTML = computerTally
     document.getElementById("spaceMan").style.left = "0%";
     document.getElementById("spaceMan").style.right = "0%";
 }
